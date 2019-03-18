@@ -50,7 +50,7 @@ p, hr, h4, h5, h6 {
 }
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Bree Serif", serif;
+	font-family: "Montserrat", sans-serif;
 	font-weight: 400 !important;
 }
 h1 {
@@ -87,7 +87,7 @@ img, iframe {
 a {
 	font-weight:700;
 	text-decoration:none;
-	color: #5cc265; /* Change Link Color */
+	color: #1e6924; /* Change Link Color */
 }
 a:hover {
 	text-decoration:underline;
