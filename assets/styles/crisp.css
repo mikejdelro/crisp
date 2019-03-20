@@ -6,8 +6,8 @@
 /* Basic Typography */
 html,
 body {
-	font-size: 1em;
-	line-height: 1.65em;
+	font-size: 0.8em;
+	line-height: 1.35em;
 	font-family: "Open Sans", sans-serif;
 	font-weight: 300;
 	background: #fff;
@@ -139,7 +139,7 @@ strong {
 blockquote {
 	border-left: 0.4em solid #eee;
 	padding-left: 1.2em;
-	font-size: 1.3em;
+	font-size: 1em;
 }
 
 hr {
