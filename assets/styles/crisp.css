@@ -277,6 +277,34 @@ footer a:hover {
 	text-decoration: none;
 }
 
+/* Figure and Figcaption */
+article {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+  
+article img {
+	display: block;
+	max-width: 100%;
+}
+  
+.kg-width-wide img {
+	max-width: 85vw;
+}
+  
+.kg-width-full img {
+	max-width: 100vw;
+}
+  
+article figure {
+	margin: 0;
+}
+  
+article figcaption {
+	text-align: center;
+}
+
 /* Large Screens */
 @media only screen and (min-width: 1281px) {
 

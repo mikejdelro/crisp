@@ -1,57 +1,60 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-	{{! Document Settings }}
-	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<head>
+		{{! Document Settings }}
+		<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-	{{! Page Meta }}
-	<title>{{meta_title}}</title>
-	
-	{{! Prism Syntax Highlighting }}
-	<link rel="stylesheet" type="text/css" href="{{asset '/prism/prism.css'}}" />
-	<script type="text/javascript" src="{{asset '/prism/prism.js'}}"></script>
-	
-	{{! Google Fonts }}
-	<link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,300,700' rel='stylesheet' type='text/css'>
-	<link href='//fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-	
-	{{! Stylesheets }}
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-	 crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="{{asset '/styles/crisp.css'}}">
-	
-	{{! Responsive Meta Tags }}
-	<meta name="HandheldFriendly" content="True" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!--[if lt IE 9]>
-				<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-				<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-			<![endif]-->
-	{{{block "head"}}}
-	{{ghost_head}}
-</head>
+		{{! Page Meta }}
+		<title>{{meta_title}}</title>
+		
+		{{! Prism Syntax Highlighting }}
+		<link rel="stylesheet" type="text/css" href="{{asset '/prism/prism.css'}}" />
+		<script type="text/javascript" src="{{asset '/prism/prism.js'}}"></script>
 
-<body class="{{body_class}}">
-	<header id="header" {{#if @blog.cover_image}} style="background-image: url('{{@blog.cover_image}}')" {{/if}}>
-		{{#if @blog.logo}}<a id="logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" align="center" /></a>{{/if}}
-		<h1><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
-		<p>{{@blog.description}}</p>
-		{{> follow}}
-		{{navigation}}
-	</header>
-	<main id="content">
-		{{{body}}}
-	</main>
-	<footer id="footer">
-		<section id="footer-message">
-			&copy; {{date format='YYYY'}} {{@blog.title}}. All rights reserved.
-			<a href="https://michaeldelrosar.io/attribution/" target="_blank">Attribution</a>.
-		</section>
-		{{ghost_foot}}
-	</footer>
-</body>
+		{{! Table of Contents Fix }}
+		<script type="text/javascript" src="{{asset '/js/toc.js'}}"></script>
+		
+		{{! Google Fonts }}
+		<link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,300,700' rel='stylesheet' type='text/css'>
+		<link href='//fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+		
+		{{! Stylesheets }}
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+		crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="{{asset '/styles/crisp.css'}}">
+		
+		{{! Responsive Meta Tags }}
+		<meta name="HandheldFriendly" content="True" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+					<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+					<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+				<![endif]-->
+		{{{block "head"}}}
+		{{ghost_head}}
+	</head>
+
+	<body class="{{body_class}}">
+		<header id="header" {{#if @site.cover_image}} style="background-image: url('{{@site.cover_image}}')" {{/if}}>
+			{{#if @site.logo}}<a id="logo" href="{{@site.url}}"><img src="{{@site.logo}}" alt="{{@site.title}}" align="center" /></a>{{/if}}
+			<h1><a href="{{@site.url}}">{{@site.title}}</a></h1>
+			<p>{{@site.description}}</p>
+			{{> follow}}
+			{{navigation}}
+		</header>
+		<main id="content">
+			{{{body}}}
+		</main>
+		<footer id="footer">
+			<section id="footer-message">
+				&copy; {{date format='YYYY'}} {{@site.title}}. All rights reserved.
+				<a href="https://michaeldelrosar.io/attribution/" target="_blank">Attribution</a>.
+			</section>
+			{{ghost_foot}}
+		</footer>
+	</body>
 
 </html>
