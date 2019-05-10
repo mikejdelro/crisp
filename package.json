@@ -1,5 +1,5 @@
 {
-    "name"        : "crisp-MD",
+    "name"        : "crisp-md",
     "description" : "A fork for crisp, originally built by Kathy Qian",
     "version"     : "2.0.0",
     "engines": {
