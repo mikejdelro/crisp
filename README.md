@@ -5,3 +5,4 @@ A fork of the original [crisp](https://github.com/kathyqian/crisp) by [Kathy Qia
 - Added Prism.JS for `<pre><code>` tags.
 - Removed rounding on the icon
 - CSS tweaks
+- Cleaned code using some Beautify to make code a bit more readable
