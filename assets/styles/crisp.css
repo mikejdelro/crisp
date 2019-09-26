@@ -35,6 +35,10 @@ header {
 	background-size: cover;
 }
 
+pre {
+	font-size: 1em
+}
+
 #content {
 	display: block;
 	width: 90%;
