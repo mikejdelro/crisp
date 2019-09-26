@@ -1,5 +1,6 @@
 .rrssb-buttons.large-format li a,
 .rrssb-buttons.large-format li a .text {
+    backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -ms-backface-visibility: hidden
