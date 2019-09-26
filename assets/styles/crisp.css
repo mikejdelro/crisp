@@ -38,11 +38,9 @@ header {
 code {
 	background-color: #ccc;
 	display: inline-block;
-	line-height: 1.2em;
 	padding: 0.3em 0.3em 0.3em 0.3em;
-	vertical-align: 20%;
 	font-size: 0.8em;
-	font-family: "Consolas", sans-serif;
+	font-family: "Courier New", Courier, monospace;
 	letter-spacing: 0.05em;
 	border-radius: 0.25em;
 	-moz-border-radius: 0.25em;
