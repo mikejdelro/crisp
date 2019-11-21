@@ -1,10 +1,11 @@
 {
     "name"        : "crisp-md",
     "description" : "A fork for crisp, originally built by Kathy Qian",
-    "version"     : "1.0.4",
-    "engines": {
-        "ghost": ">=2.0.0"
-    },
+    "version"     : "1.0.5",
+	"engines": {
+		"ghost": ">=3.0.0",
+		"ghost-api": "v3"
+	},
     "license": "MIT",
     "screenshots": {
         "desktop": "assets/screenshot-desktop.png",
